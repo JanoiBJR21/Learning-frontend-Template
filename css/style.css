@@ -41,6 +41,9 @@ header {
         }
       }
     }
+    @media screen and (max-width: 862px) {
+      margin: 0 20px;
+    }
   }
   .profile {
     display: flex;
@@ -121,6 +124,9 @@ header {
           display: none;
         }
       }
+    }
+    @media screen and (max-width: 862px) {
+      margin: 0 20px;
     }
   }
 }
@@ -239,45 +245,66 @@ header {
             color: var(--light);
             padding: 3px 15px;
           }
+        }
       }
-    }
-    @media screen and (max-width: 479px){
-      flex-direction: column;
-      .featured-works-posts-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 280px;
-          height: 200px;
-          border-radius: 5px;
-          /* object-fit: cover; */
+      @media screen and (max-width: 479px) {
+        flex-direction: column;
+        .featured-works-posts-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 280px;
+            height: 200px;
+            border-radius: 5px;
+            /* object-fit: cover; */
+          }
         }
       }
     }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: var(--light-white);
+    }
   }
-  hr{
-    border: none;
-    height: 2px;
-    background-color: var(--light-white);
-  }
-  }
-  @media screen and (max-width: 862px){
+  @media screen and (max-width: 862px) {
     margin: 0 20px;
   }
 }
 
-footer{
-  .footer-icons{
+footer {
+  display: flex;
+  justify-content: center;
+
+  .social-media {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 20px;
     font-size: 48px;
     padding-top: 100px;
+
+    li {
+      list-style: none;
+
+      a {
+        i {
+          color: var(--drak-blue);
+        }
+      }
+    }
   }
-  p{
+  p {
     text-align: center;
+    margin-top: 20px;
     padding: 20px;
+  }
+  @media screen and (max-width: 320px){
+    div{
+      margin: 0 20px;
+      p{
+        font-size: 14px;
+      }
+    }
   }
 }
